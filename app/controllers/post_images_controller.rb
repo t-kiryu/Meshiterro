@@ -23,7 +23,7 @@ class PostImagesController < ApplicationController
     @post_image.destroy
     redirect_to post_images_path
   end
-
+  
   private
   def post_image_params
     params.require(:post_image).permit(:shop_name, :caption)
